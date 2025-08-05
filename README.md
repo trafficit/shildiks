@@ -1,15 +1,14 @@
 # shildiks
  The program converts text and label structures from photos (using computer vision recognition).
 
-sudo apt install tesseract-ocr
-Install Python dependencies:
-
-pip install pytesseract pillow openpyxl
-
 # Shildik OCR Dashboard
 
 A Python-based application for automatic digit recognition from images of industrial nameplates ("shildiks"). The results can be exported to Excel or plain text format. The program uses Tesseract OCR and provides a simple GUI for user interaction.
 
+sudo apt install tesseract-ocr
+Install Python dependencies:
+
+pip install pytesseract pillow openpyxl
 ---
 
 ## Features
@@ -46,5 +45,11 @@ import pytesseract
 import openpyxl
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
+_______________________________________________
+
+sudo apt install tesseract-ocr
+Install Python dependencies:
+
+pip install pytesseract pillow openpyxl
 
 
