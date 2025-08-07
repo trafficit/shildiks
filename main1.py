@@ -41,7 +41,7 @@ def clean_shield_line(line):
     if line.startswith("++"):
         cleaned = re.sub(r"[^\w\s.,:;!?()-]", "", line)
         cleaned = re.sub(r"\s{2,}", " ", cleaned).strip()
-        return cleaned if cleaned else "⚠️ Пустая строка после очистки"
+        return cleaned if cleaned else " Пустая строка после очистки"
     return line
 
 def process_images():
@@ -76,7 +76,7 @@ def process_images():
                     if line.startswith("++"):
                         line = clean_shield_line(line)
                     lines.append(line)
-                results.append((file, lines if lines else ["⚠️ No text detected."]))
+                results.append((file, lines if lines else [" No text detected."]))
             except Exception as e:
                 print(f"❌ Error with {file}: {str(e)}")
                 results.append((file, [f"Error: {str(e)}"]))
